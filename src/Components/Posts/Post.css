@@ -30,6 +30,11 @@
     overflow-x: scroll;
     overflow-y: hidden;
   }
+  .cards::-webkit-scrollbar{
+    display: none;
+  }
+ 
+  
   
   .card {
     margin-right: 15px;
@@ -38,6 +43,7 @@
     width: 222px;
     height: 270px;
     display: inline-block;
+    border: 1px solid #d0d0d0;
     cursor: pointer;
   }
   
