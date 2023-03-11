@@ -43,10 +43,15 @@ const Create = () => {
             userId:user.uid,
             createdAt: date.toDateString()
           })
+        }).then(()=>{
+          navigate('/')
         })
+        .then(()=>{
+          navigate('/')
+        })
+        
       }
     )
-
 
   }
   return (

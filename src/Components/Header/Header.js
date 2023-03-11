@@ -58,7 +58,7 @@ function Header() {
           <SellButton></SellButton>
           <div className="sellMenuContent">
             <SellButtonPlus></SellButtonPlus>
-            <span>SELL</span>
+            <Link to={'/create'} className='span'><span>SELL</span></Link>
           </div>
         </div>
       </div>

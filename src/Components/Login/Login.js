@@ -1,6 +1,7 @@
 import React,{useState, useContext} from 'react';
 import { getAuth,signInWithEmailAndPassword } from 'firebase/auth';
 import {FirebaseContext} from '../../store/FirebaseContext'
+import { Link } from 'react-router-dom';
 
 import Logo from '../../olx-logo.png';
 import './Login.css';
@@ -55,7 +56,8 @@ function Login() {
           <br />
           <button>Login</button>
         </form>
-        <a>Signup</a>
+        <Link to={'/signup'}><a>Signup</a></Link>
+        
       </div>
     </div>
   );
